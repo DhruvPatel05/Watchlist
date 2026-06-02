@@ -16,19 +16,48 @@ struct ContentView: View {
 
     var body: some View {
         List {
-            ForEach(movies) { movie in
-                HStack{
-                    Text(movie.title)
-                    Spacer()
-                    Text(movie.genre.name)
-                }//: LIST ROW
-                .swipeActions {
-                    Button(role: .destructive) {
-                        withAnimation {
-                            modelContext.delete(movie)
+            if !movies.isEmpty {
+                Section(
+                    header:
+                        VStack {
+                            Text("Watchlist")
+                                .font(.largeTitle.weight(.black))
+                                .foregroundStyle(.blue.gradient)
+                                .padding()
+                            
+                            HStack {
+                                Label("Title",systemImage: "movieclapper")
+                                Spacer()
+                                Label("Genre",systemImage: "tag")
+                            }
                         }
-                    } label: {
-                        Label("Delete",systemImage: "trash")
+                ) {
+                    ForEach(movies) { movie in
+                        HStack{
+                            Text(movie.title)
+                                .font(.title.weight(.light))
+                                .padding(.vertical,2)
+                            Spacer()
+                            Text(movie.genre.name)
+                                .font(.footnote.weight(.medium))
+                                .padding(.horizontal,6)
+                                .padding(.vertical,3)
+                                .background(
+                            Capsule()
+                                .stroke(lineWidth:1)
+                                
+                                )
+                            
+                        }//: LIST ROW
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                withAnimation {
+                                    modelContext.delete(movie)
+                                }
+                            } label: {
+                                Label("Delete",systemImage: "trash")
+                            }
+                        }
                     }
                 }
             }
