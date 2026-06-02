@@ -32,9 +32,6 @@ extension Movie {
         container.mainContext.insert(Movie(title: "Magnificent Seven", genre: Genre(rawValue: 12)!))
         container.mainContext.insert(Movie(title: "The Revenant", genre: Genre(rawValue: 5)!))
         container.mainContext.insert(Movie(title: "Dirty Dancing", genre: Genre(rawValue: 10)!))
-        
-
-
         return container
     }
 }
