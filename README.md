@@ -24,8 +24,8 @@ The app allows users to create a personal movie watchlist, categorize movies by 
 ### Onboarding Experience
 
 <p align="center">
-  <img src="./IMG_7764.PNG" width="220"/>
-  <img src="./IMG_7765.PNG" width="220"/>
+  <img src="Screenshots/IMG_7764.PNG" width="220"/>
+  <img src="Screenshots/IMG_7765.PNG" width="220"/>
 </p>
 
 <p align="center">
@@ -39,8 +39,8 @@ The app allows users to create a personal movie watchlist, categorize movies by 
 ### Add Movies
 
 <p align="center">
-  <img src="./IMG_7766.PNG" width="220"/>
-  <img src="./IMG_7767.PNG" width="220"/>
+  <img src="Screenshots/IMG_7766.PNG" width="220"/>
+  <img src="Screenshots/IMG_7767.PNG" width="220"/>
 </p>
 
 <p align="center">
@@ -54,8 +54,8 @@ The app allows users to create a personal movie watchlist, categorize movies by 
 ### Watchlist Features
 
 <p align="center">
-  <img src="./IMG_7768.PNG" width="220"/>
-  <img src="./IMG_7769.PNG" width="220"/>
+  <img src="Screenshots/IMG_7768.PNG" width="220"/>
+  <img src="Screenshots/IMG_7769.PNG" width="220"/>
 </p>
 
 <p align="center">
