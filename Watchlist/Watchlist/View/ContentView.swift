@@ -101,6 +101,7 @@ struct ContentView: View {
 
 #Preview("Sample Data") {
     ContentView()
+        .modelContainer(Movie.preview)
 }
 
 #Preview("Empty List") {
